@@ -109,7 +109,9 @@ namespace Course.MasterLinq
             // Less28 - ThenBy
             // S04L28_ThenBy.Demo();
             // Less29 - First Last Single OrDefault
-            S04L29_FirstLastSingle_OrDefault.Demo();
+            // S04L29_FirstLastSingle_OrDefault.Demo();
+            // Less30 - TakeWhile, SkipWhile
+            S04L30_TakeWhile_SkipWhile.Demo();
             #endregion
         }
 
