@@ -100,6 +100,11 @@ namespace Course.MasterLinq
             }
             */
             #endregion
+
+            #region S04
+            // Les26 - Select
+            S04L26_Select.Demo();
+            #endregion
         }
 
         private static void ParseCsv(string file)
@@ -119,6 +124,8 @@ namespace Course.MasterLinq
             var list = File.ReadAllLines(file)
                         .Skip(1)
                         .Select(ChessPlayer.ParseFideCsv);
+                        // .Select(s => ChessPlayer.ParseFideCsv(s)); // Same as
+                        // above
 
             // Using Method Chains syntax (in general, more powerfull than Query
             // syntax)
