@@ -10,6 +10,10 @@ namespace Course.MasterLinq
     {
         static void Main(string[] args)
         {
+
+            #region Sec02
+            /*
+
             // S02L07
             WhyLinq.Demo();
 
@@ -79,6 +83,13 @@ namespace Course.MasterLinq
 
             #region S02L19
             AlteringLists.AlterWithSecondList();
+            #endregion
+            */
+            #endregion
+
+            #region S03
+            DataStreamGeneration.GeneratingRange();
+            DataStreamGeneration.GeneratingRepeating();
             #endregion
         }
 
