@@ -18,7 +18,7 @@ namespace Course.MasterLinq
             get
             {
                 // throw new InvalidOperationException();
-                System.Console.WriteLine($"Log Country: {_country}");
+                // System.Console.WriteLine($"Log Country: {_country}");
                 return _country;
             }
             set => _country = value;

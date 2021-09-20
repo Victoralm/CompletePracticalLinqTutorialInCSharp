@@ -107,7 +107,9 @@ namespace Course.MasterLinq
             // Less27 - Where
             // S02L27_Where.Demo();
             // Less28 - ThenBy
-            S04L28_ThenBy.Demo();
+            // S04L28_ThenBy.Demo();
+            // Less29 - First Last Single OrDefault
+            S04L29_FirstLastSingle_OrDefault.Demo();
             #endregion
         }
 
