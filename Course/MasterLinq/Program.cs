@@ -103,7 +103,11 @@ namespace Course.MasterLinq
 
             #region S04
             // Les26 - Select
-            S04L26_Select.Demo();
+            // S04L26_Select.Demo();
+            // Less27 - Where
+            // S02L27_Where.Demo();
+            // Less28 - ThenBy
+            S04L28_ThenBy.Demo();
             #endregion
         }
 
