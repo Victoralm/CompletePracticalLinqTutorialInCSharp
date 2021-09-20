@@ -111,7 +111,9 @@ namespace Course.MasterLinq
             // Less29 - First Last Single OrDefault
             // S04L29_FirstLastSingle_OrDefault.Demo();
             // Less30 - TakeWhile, SkipWhile
-            S04L30_TakeWhile_SkipWhile.Demo();
+            // S04L30_TakeWhile_SkipWhile.Demo();
+            // Less31 - SequenceEqual
+            S04L31_SequenceEqual.Demo();
             #endregion
         }
 
