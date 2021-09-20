@@ -89,6 +89,7 @@ namespace Course.MasterLinq
             #endregion
 
             #region S03
+            /*
             DataStreamGeneration.GeneratingRange();
             DataStreamGeneration.GeneratingRepeating();
 
@@ -97,6 +98,7 @@ namespace Course.MasterLinq
             {
                 Console.Write(item.ToString("F2") + " ");
             }
+            */
             #endregion
         }
 
