@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -90,6 +91,12 @@ namespace Course.MasterLinq
             #region S03
             DataStreamGeneration.GeneratingRange();
             DataStreamGeneration.GeneratingRepeating();
+
+            Console.WriteLine("\nRandomizing");
+            foreach (var item in DataStreamGeneration.GenerateRandom().Where(x => x > 0.7).Take(5))
+            {
+                Console.Write(item.ToString("F2") + " ");
+            }
             #endregion
         }
 

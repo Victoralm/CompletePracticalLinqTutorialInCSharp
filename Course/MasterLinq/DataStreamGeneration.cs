@@ -34,5 +34,15 @@ namespace Course.MasterLinq
             // If no elements to return, Best Practice:
             return Enumerable.Empty<int>();
         }
+
+
+        public static IEnumerable<double> GenerateRandom()
+        {
+            var random = new Random();
+            while (true)
+            {
+                yield return random.NextDouble();
+            }
+        }
     }
 }
