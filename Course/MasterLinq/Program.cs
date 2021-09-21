@@ -104,16 +104,24 @@ namespace Course.MasterLinq
             #region S04
             // Les26 - Select
             // S04L26_Select.Demo();
+
             // Less27 - Where
             // S02L27_Where.Demo();
+
             // Less28 - ThenBy
             // S04L28_ThenBy.Demo();
+
             // Less29 - First Last Single OrDefault
             // S04L29_FirstLastSingle_OrDefault.Demo();
+
             // Less30 - TakeWhile, SkipWhile
             // S04L30_TakeWhile_SkipWhile.Demo();
+
             // Less31 - SequenceEqual
-            S04L31_SequenceEqual.Demo();
+            // S04L31_SequenceEqual.Demo();
+
+            // Less31 - SequenceEqual
+            S04L32_Distinct.Demo();
             #endregion
         }
 
