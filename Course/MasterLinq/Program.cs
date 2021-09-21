@@ -126,8 +126,11 @@ namespace Course.MasterLinq
             // Less33 - SequenceEqual
             // S04L33_AnyAllContains.Demo();
 
-            // Less33 - SequenceEqual
-            S04L34_SelectMany.Demo();
+            // Less34 - SequenceEqual
+            // S04L34_SelectMany.Demo();
+
+            // Less35 - ElementAt and Counting
+            S04L35_ElementAt_Counting.Demo();
             #endregion
         }
 
