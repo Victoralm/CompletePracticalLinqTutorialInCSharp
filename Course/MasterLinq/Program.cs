@@ -120,8 +120,11 @@ namespace Course.MasterLinq
             // Less31 - SequenceEqual
             // S04L31_SequenceEqual.Demo();
 
-            // Less31 - SequenceEqual
-            S04L32_Distinct.Demo();
+            // Less32 - SequenceEqual
+            // S04L32_Distinct.Demo();
+
+            // Less33 - SequenceEqual
+            S04L33_AnyAllContains.Demo();
             #endregion
         }
 

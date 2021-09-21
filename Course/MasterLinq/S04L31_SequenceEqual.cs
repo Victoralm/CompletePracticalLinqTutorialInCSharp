@@ -18,12 +18,12 @@ namespace Course.MasterLinq
             Console.WriteLine($"Are equal: {areEqual}");
 
             // returns false too !?!?!?!?!?
-            bool areEqual2 = players.SequenceEqual(players2, new PlayerComparer());
+            bool areEqual2 = players.SequenceEqual(players2, new PlayersComparer());
             Console.WriteLine($"Are equal: {areEqual}");
         }
     }
 
-    public class PlayerComparer : IEqualityComparer<ChessPlayer>
+    public class PlayersComparer : IEqualityComparer<ChessPlayer>
     {
         public bool Equals(ChessPlayer x, ChessPlayer y)
         {
