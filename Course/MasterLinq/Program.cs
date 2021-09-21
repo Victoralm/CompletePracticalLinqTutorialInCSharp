@@ -132,6 +132,11 @@ namespace Course.MasterLinq
             // Less35 - ElementAt and Counting
             // S04L35_ElementAt_Counting.Demo();
             #endregion
+
+            #region Sec05
+            // Less38 - Join
+            S05L38_Join.Demo();
+            #endregion
         }
 
         private static void ParseCsv(string file)
