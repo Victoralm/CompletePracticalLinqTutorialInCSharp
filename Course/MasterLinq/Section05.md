@@ -1,4 +1,4 @@
-# Section 05
+# Section 05 - Joining, Grouping and Aggregating
 
 -   `Join` method which is very similar to the Join operator in SQL. If you have a
     key for joining collections, then use it.

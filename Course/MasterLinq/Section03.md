@@ -1,4 +1,4 @@
-# Section 03
+# Section 03 - Generating Data Streams
 
 -   Use the Range method to generate a sequence of numbers within a specified Range.
 -   Use the Repeat method to generate a sequence that contains one repeated value.

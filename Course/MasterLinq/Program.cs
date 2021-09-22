@@ -153,7 +153,12 @@ namespace Course.MasterLinq
             // S05L43_Concat_Union.Demo();
 
             // Less44 - Intersect and Except
-            S05L44_Intersect_Except.Demo();
+            // S05L44_Intersect_Except.Demo();
+            #endregion
+
+            #region Sec06
+            // Less47 - OfType and Cast
+            S06L47_OfType_Cast.Demo();
             #endregion
         }
 

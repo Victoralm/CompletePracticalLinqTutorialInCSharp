@@ -1,4 +1,4 @@
-# Section 04
+# Section 04 - Filtering, Ordering and Projecting
 
 -   `Select` projects a sequence of data of one type to project into another
     sequence of data of another type.

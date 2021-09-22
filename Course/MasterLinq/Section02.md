@@ -1,4 +1,4 @@
-# Section 02
+# Section 02 - Introduction to LINQ
 
 -   LINQ stands for Language Integrated Query and it is a query "language" which
     abstracts away the technology of accesssing data stored in different sources.
