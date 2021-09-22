@@ -20,7 +20,7 @@
 -   Yield Return enables deferred execution of queries.
 -   LINQ queries built with deferred operators will fire up only at the iteration step.
 -   LINQ queries built with deferred operators will throw exceptions only at the
-    iteration step. (ATENTION: Doesn't look to be the case with .Net v5.0.400)
+    iteration step. (ATTENTION: Doesn't look to be the case with .Net v5.0.400)
 -   Be careful with closures taken from within `for` and `foreach` loops. The
     results may be unexpected.
 -   Be careful altering a list, you can't mindlessly modify the list within a

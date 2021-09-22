@@ -140,8 +140,11 @@ namespace Course.MasterLinq
             // Less39 - GroupBy
             // S05L39_GroupBy.Demo();
 
-            // Less40 - Group Join
-            S05L40_GroupJoin.Demo();
+            // Less40 - GroupJoin
+            // S05L40_GroupJoin.Demo();
+
+            // Less41 - Zip
+            S05L41_Zip.Demo();
             #endregion
         }
 
