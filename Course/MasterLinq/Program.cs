@@ -149,8 +149,11 @@ namespace Course.MasterLinq
             // Less42 - Min, Max, Sum, Average
             // S05L42_MinMaxSumAverage.Demo();
 
-            // Less42 - Min, Max, Sum, Average
-            S05L43_Concat_Union.Demo();
+            // Less43 - Concat and Union
+            // S05L43_Concat_Union.Demo();
+
+            // Less44 - Intersect and Except
+            S05L44_Intersect_Except.Demo();
             #endregion
         }
 
