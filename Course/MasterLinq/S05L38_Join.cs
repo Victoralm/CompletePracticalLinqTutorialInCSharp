@@ -12,7 +12,7 @@ namespace Course.MasterLinq
         public int TakenPlace { get; set; }
         public string Country { get; set; }
 
-        public static IEnumerable<Tournament> GetDemoStats()
+        internal static IEnumerable<Tournament> GetDemoStats()
         {
             return new List<Tournament>
             {
@@ -55,23 +55,23 @@ namespace Course.MasterLinq
         {
             var players = ChessPlayer.GetDemoList().OrderByDescending(player => player.Rating).Take(10).ToList();
 
-                var tournaments = Tournament.GetDemoStats();
+            var tournaments = Tournament.GetDemoStats();
 
-                var join = players.Join(tournaments,
-                            p => p.Id, t => t.PlayerId,
-                            (p, t) => new
-                            {
-                                p.LastName,
-                                p.Rating,
-                                t.Title,
-                                t.TakenPlace,
-                                t.Country,
-                            });
+            var join = players.Join(tournaments,
+                        p => p.Id, t => t.PlayerId,
+                        (p, t) => new
+                        {
+                            p.LastName,
+                            p.Rating,
+                            t.Title,
+                            t.TakenPlace,
+                            t.Country,
+                        });
 
-                foreach (var cur in join)
-                {
-                    Console.WriteLine($"{cur.LastName} took {cur.TakenPlace} place at {cur.Title}. Has rating {cur.Rating}.");
-                }
+            foreach (var cur in join)
+            {
+                Console.WriteLine($"{cur.LastName} took {cur.TakenPlace} place at {cur.Title}. Has rating {cur.Rating}.");
+            }
         }
     }
 }
