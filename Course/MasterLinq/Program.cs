@@ -161,7 +161,10 @@ namespace Course.MasterLinq
             // S06L47_OfType_Cast.Demo();
 
             // Less48 - ToArray, ToList, ToDictionary and ToLookup
-            S06L48_ToArray_ToList_ToDictionary_ToLookup.Demo();
+            // S06L48_ToArray_ToList_ToDictionary_ToLookup.Demo();
+
+            // Less49 - Pitfalls of conversions
+            S06L49_PitfallsOfConversions.Demo();
             #endregion
         }
 
