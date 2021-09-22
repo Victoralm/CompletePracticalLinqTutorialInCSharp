@@ -158,7 +158,10 @@ namespace Course.MasterLinq
 
             #region Sec06
             // Less47 - OfType and Cast
-            S06L47_OfType_Cast.Demo();
+            // S06L47_OfType_Cast.Demo();
+
+            // Less48 - ToArray, ToList, ToDictionary and ToLookup
+            S06L48_ToArray_ToList_ToDictionary_ToLookup.Demo();
             #endregion
         }
 
