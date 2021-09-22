@@ -147,7 +147,10 @@ namespace Course.MasterLinq
             // S05L41_Zip.Demo();
 
             // Less42 - Min, Max, Sum, Average
-            S05L42_MinMaxSumAverage.Demo();
+            // S05L42_MinMaxSumAverage.Demo();
+
+            // Less42 - Min, Max, Sum, Average
+            S05L43_Concat_Union.Demo();
             #endregion
         }
 
