@@ -164,7 +164,12 @@ namespace Course.MasterLinq
             // S06L48_ToArray_ToList_ToDictionary_ToLookup.Demo();
 
             // Less49 - Pitfalls of conversions
-            S06L49_PitfallsOfConversions.Demo();
+            // S06L49_PitfallsOfConversions.Demo();
+            #endregion
+
+            #region Sec07
+            // Less53 - Creating XML from a collection
+            S07L53_CreatingXMLFromACollection.Demo();
             #endregion
         }
 
