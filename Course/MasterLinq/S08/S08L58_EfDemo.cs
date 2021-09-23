@@ -12,14 +12,53 @@ namespace Course.MasterLinq
             // Should not be used in production!!
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ChessPlayerDb>());
 
-            InsertData();
-            QueryData();
+            // InsertData();
+            // QueryData();
+
+            Pitfalls();
+        }
+
+        private static void Pitfalls()
+        {
+            var db = new ChessPlayerDb();
+            db.Database.Log = Console.WriteLine;
+
+            #region Efficiency
+            /*
+            var query = db.ChessPlayers
+                        .Where(p => p.Rating > 2700)
+                        .OrderByDescending(p => p.Rating)
+                        .Take(10) // Efficient, it will only get the 10 first records
+                        .ToList();
+                        //.Take(10); // Inefficient, it will take all first then
+                        //select the 10 first records
+
+            foreach (var player in query)
+            {
+                Console.WriteLine($"{player.LastName} - Rating: {player.Rating}");
+            }
+            */
+            #endregion
+
+            #region Pitfall
+            // Throws an Exception, Entity Framework can't make that
+            // convertion:
+            // Unhandled exception. System.NotSupportedException: Unable to
+            // create a constant value of type 'Course.MasterLinq.ChessPlayer'.
+            // Only primitive types or enumeration types are supported in this
+            // context.
+            var query2 = db.ChessPlayers
+                        .Where(p => p.Rating > 2700)
+                        .OrderByDescending(p => p.Rating)
+                        .Contains(new ChessPlayer());
+
+            Console.WriteLine($"Text");
+            #endregion
         }
 
         private static void QueryData()
         {
             var db = new ChessPlayerDb();
-
             db.Database.Log = Console.WriteLine;
 
             var query = db.ChessPlayers
