@@ -172,7 +172,10 @@ namespace Course.MasterLinq
             // S07L53_CreatingXMLFromACollection.Demo();
 
             // Less54 - Refactoring Code
-            S07L54_RefactoringCode.Demo();
+            // S07L54_RefactoringCode.Demo();
+
+            // Less55 - Reading XML
+            S07L55_ReadingXML.Demo();
             #endregion
         }
 
