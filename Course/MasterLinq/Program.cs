@@ -175,7 +175,12 @@ namespace Course.MasterLinq
             // S07L54_RefactoringCode.Demo();
 
             // Less55 - Reading XML
-            S07L55_ReadingXML.Demo();
+            // S07L55_ReadingXML.Demo();
+            #endregion
+
+            #region Sec08
+            // Less59 - Inserting and Reading
+            S08L58_EfDemo.Run();
             #endregion
         }
 

@@ -1,5 +1,6 @@
 using System;
 using System.Data.Entity;
+using System.Linq;
 
 namespace Course.MasterLinq
 {
@@ -17,12 +18,32 @@ namespace Course.MasterLinq
 
         private static void QueryData()
         {
-            throw new NotImplementedException();
+            var db = new ChessPlayerDb();
+
+            db.Database.Log = Console.WriteLine;
+
+            var query = db.ChessPlayers
+                        .Where(p => p.Rating > 2700)
+                        .OrderByDescending(p => p.Rating);
+
+            foreach (var player in query)
+            {
+                Console.WriteLine($"{player.LastName} - Rating: {player.Rating}");
+            }
         }
 
         private static void InsertData()
         {
-            throw new NotImplementedException();
+            var records = ChessPlayer.GetDemoList().ToList();
+
+            var db = new ChessPlayerDb();
+
+            if(!db.ChessPlayers.Any())
+            {
+                db.ChessPlayers.AddRange(records);
+            }
+
+            db.SaveChanges();
         }
     }
 
