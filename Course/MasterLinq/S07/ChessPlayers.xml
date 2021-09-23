@@ -1,83 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Players>
-  <Player>
-    <Id>1</Id>
-    <Rating>2842</Rating>
-    <BirthYear>1990</BirthYear>
-    <Country>NOR</Country>
-    <FirstName>Magnus</FirstName>
-    <LastName>Carlsen</LastName>
-  </Player>
-  <Player>
-    <Id>2</Id>
-    <Rating>2822</Rating>
-    <BirthYear>1992</BirthYear>
-    <Country>USA</Country>
-    <FirstName>Fabiano</FirstName>
-    <LastName>Caruana</LastName>
-  </Player>
-  <Player>
-    <Id>3</Id>
-    <Rating>2801</Rating>
-    <BirthYear>1985</BirthYear>
-    <Country>AZE</Country>
-    <FirstName>Shakhriyar</FirstName>
-    <LastName>Mamedyarov</LastName>
-  </Player>
-  <Player>
-    <Id>4</Id>
-    <Rating>2797</Rating>
-    <BirthYear>1992</BirthYear>
-    <Country>CHN</Country>
-    <FirstName>Liren</FirstName>
-    <LastName>Ding</LastName>
-  </Player>
-  <Player>
-    <Id>5</Id>
-    <Rating>2780</Rating>
-    <BirthYear>1994</BirthYear>
-    <Country>NED</Country>
-    <FirstName>Anish</FirstName>
-    <LastName>Giri</LastName>
-  </Player>
-  <Player>
-    <Id>6</Id>
-    <Rating>2780</Rating>
-    <BirthYear>1993</BirthYear>
-    <Country>USA</Country>
-    <FirstName>Wesley</FirstName>
-    <LastName>So</LastName>
-  </Player>
-  <Player>
-    <Id>7</Id>
-    <Rating>2779</Rating>
-    <BirthYear>1975</BirthYear>
-    <Country>RUS</Country>
-    <FirstName>Vladimir</FirstName>
-    <LastName>Kramnik</LastName>
-  </Player>
-  <Player>
-    <Id>8</Id>
-    <Rating>2779</Rating>
-    <BirthYear>1990</BirthYear>
-    <Country>FRA</Country>
-    <FirstName>Maxime</FirstName>
-    <LastName>Vachier-Lagrave</LastName>
-  </Player>
-  <Player>
-    <Id>9</Id>
-    <Rating>2777</Rating>
-    <BirthYear>1987</BirthYear>
-    <Country>USA</Country>
-    <FirstName>Hikaru</FirstName>
-    <LastName>Nakamura</LastName>
-  </Player>
-  <Player>
-    <Id>10</Id>
-    <Rating>2773</Rating>
-    <BirthYear>1990</BirthYear>
-    <Country>RUS</Country>
-    <FirstName>Sergey</FirstName>
-    <LastName>Karjakin</LastName>
-  </Player>
+  <Player Id="1" Rating="2842" BirthYear="1990" Country="NOR" FirstName="Magnus" LastName="Carlsen" />
+  <Player Id="2" Rating="2822" BirthYear="1992" Country="USA" FirstName="Fabiano" LastName="Caruana" />
+  <Player Id="3" Rating="2801" BirthYear="1985" Country="AZE" FirstName="Shakhriyar" LastName="Mamedyarov" />
+  <Player Id="4" Rating="2797" BirthYear="1992" Country="CHN" FirstName="Liren" LastName="Ding" />
+  <Player Id="5" Rating="2780" BirthYear="1994" Country="NED" FirstName="Anish" LastName="Giri" />
+  <Player Id="6" Rating="2780" BirthYear="1993" Country="USA" FirstName="Wesley" LastName="So" />
+  <Player Id="7" Rating="2779" BirthYear="1975" Country="RUS" FirstName="Vladimir" LastName="Kramnik" />
+  <Player Id="8" Rating="2779" BirthYear="1990" Country="FRA" FirstName="Maxime" LastName="Vachier-Lagrave" />
+  <Player Id="9" Rating="2777" BirthYear="1987" Country="USA" FirstName="Hikaru" LastName="Nakamura" />
+  <Player Id="10" Rating="2773" BirthYear="1990" Country="RUS" FirstName="Sergey" LastName="Karjakin" />
 </Players>

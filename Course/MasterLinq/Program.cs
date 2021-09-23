@@ -169,7 +169,10 @@ namespace Course.MasterLinq
 
             #region Sec07
             // Less53 - Creating XML from a collection
-            S07L53_CreatingXMLFromACollection.Demo();
+            // S07L53_CreatingXMLFromACollection.Demo();
+
+            // Less54 - Refactoring Code
+            S07L54_RefactoringCode.Demo();
             #endregion
         }
 
