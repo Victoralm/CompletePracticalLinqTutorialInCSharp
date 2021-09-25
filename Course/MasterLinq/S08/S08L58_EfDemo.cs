@@ -12,7 +12,7 @@ namespace Course.MasterLinq
         public static void Run()
         {
             // Should not be used in production!!
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ChessPlayerDb>());
+            System.Data.Entity.Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ChessPlayerDb>());
 
             // InsertData();
             // QueryData();

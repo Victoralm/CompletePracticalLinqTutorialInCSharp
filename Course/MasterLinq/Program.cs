@@ -180,7 +180,12 @@ namespace Course.MasterLinq
 
             #region Sec08
             // Less59 - Inserting and Reading
-            S08L58_EfDemo.Run();
+            // S08L58_EfDemo.Run();
+            #endregion
+
+            #region Sec08
+            // Less59 - Inserting and Reading
+            S09L67_Immutability.Run();
             #endregion
         }
 
