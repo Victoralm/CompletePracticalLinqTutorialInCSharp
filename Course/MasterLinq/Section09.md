@@ -119,5 +119,5 @@ stays unchanged.
 
 ### What is a Side Effect? ###
 
-in terms of programming, a side effect is an **observable change made to the
+In terms of programming, a side effect is an **observable change made to the
 state** of the system.

@@ -7,3 +7,4 @@
 -   [Section 06 - Conversions](Section06.md)
 -   [Section 07 - LINQ to XML](Section07.md)
 -   [Section 08 - Linq to Entities](Section08.md)
+-   [Section 09 - Extendibility in C#](Section09.md)
