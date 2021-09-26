@@ -31,5 +31,20 @@ namespace Course.MasterLinq
         /// </summary>
         public static T When<T>(this T @this, Func<bool> predicate, Func<T, T> fn)
                                 => predicate() ? fn(@this) : @this;
+
+        /// <summary>
+        /// Handles failure or negative path
+        /// </summary>
+        /// <param name="this"></param>
+        /// <param name="predicate"></param>
+        /// <param name="failure"></param>
+        /// <param name="success"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static T When<T>(this T @this,
+                        Func<bool> predicate,
+                        Func<T, T> failure,
+                        Func<T, T> success)
+                        => predicate() ? success(@this) : failure(@this);
     }
 }
