@@ -121,3 +121,46 @@ stays unchanged.
 
 In terms of programming, a side effect is an **observable change made to the
 state** of the system.
+
+### Decimal & Money ###
+
+- Decimal means Money?
+  - Decimal is not money. Decimal represents money!
+- Primitive obsession: IPAdress as string, ZipCode as string
+- Complex concepts have to be represented by high-level classes
+
+#### Practical Case ####
+
+- In the US are cents and Dolars
+- In Russian Federation there are Rubles and Kopeks. 1 ruble = 100 kopeks
+- The system interoperated with an external system passing money values to it
+  expressed in kopeks (2 rubles 50 kopeks are passed as 250 kopeks)
+- Kopeks started to spread all over the code base. It needs to convert from
+  rubles to kopeks and back from kopeks to rubles everywhere.
+
+(Bad) Example of method to identify the problem:
+
+```csharp
+public bool HasMismatchBetweenCounters(DispensingEventArgs eventArgs, decimal acceptedInRub)
+{
+    decimal expectedChangeInRub = eventArgs.ChangeAmount.KopToRub();
+    int dispensedTotalCashAmountInKopeks = expectedChangeInRub.RubToKop()
+                                            - eventArgs.UndeliveredChangeAmount;
+    if(dispensedTotalCashAmountInKopeks != eventArgs.dispensedTotalCashAmount)
+    {
+        return true;
+    }
+    if(acceptedInRub != eventArgs.dispensedTotalCashAmount.KopToRub())
+    {
+        return true;
+    }
+    return false;
+}
+```
+
+### Primitive Obsession ###
+
+- Creating extension methods on primitive types is the first sign of the
+  Primitive Obsession Anti-Pattern
+- Even if you keep such conversions at the system boundaries, it is still unsafe
+- It is better to implement a high-level type which represents a particular concept
