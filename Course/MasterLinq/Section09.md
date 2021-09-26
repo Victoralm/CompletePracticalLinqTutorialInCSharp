@@ -164,3 +164,25 @@ public bool HasMismatchBetweenCounters(DispensingEventArgs eventArgs, decimal ac
   Primitive Obsession Anti-Pattern
 - Even if you keep such conversions at the system boundaries, it is still unsafe
 - It is better to implement a high-level type which represents a particular concept
+
+## Conclusion ##
+
+- Functional programming paradigm is the oldest one and stays one of the most
+  applicable paradigs
+- The proper function definitions is very important in FP. Functional
+  Programming treats computation as the evaluation of mathematical functions and
+  avoids changing-state and mutable data
+- FP enforces declarative programming style, what means programming is done with
+  expressions or declarations instead of statements
+- Side effects are changes in state that do not depend on the function inputs.
+  They make program harder to understand and predict its behavior
+- Programs written in a functional style are generally more predictable, easier
+  to maintain and easier to test since you need to test independent functions
+- An object is immutable if it doesn't mutate its internal state
+- You learned how to distinguish pure and impure functions
+- The IDisposable interfaces is easily extendable as well as any other interfaces
+- You learned a concrete example of extending the StreamReader type
+- Any conversions, passes of arguments, mappings and other mechanisms of
+  managing the control flow are possible. (Thanks to LINQ extendibility feature
+  in C#, allowing to build any general purpose extensions you need to build in
+  code chains)
